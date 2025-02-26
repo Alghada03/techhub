@@ -72,11 +72,12 @@
     </nav>
 
     <section id="about">
-        <picture>
-            <source media="(min-width: 1200px)" srcset="logo-800.png">
-            <source media="(min-width: 800px)" srcset="logo-800.png">
-            <img src="C:\Users\ghada\CSC3750\1-web tech\logo.png" alt="My Tech Empowerment Hub Logo">
-        </picture>
+    <picture>
+        <source media="(min-width: 1200px)" srcset="images/logo.png">
+        <source media="(min-width: 800px)" srcset="images/logo.png">
+        <img src="images/logo.png" alt="My Tech Empowerment Hub Logo">
+    </picture>
+
         
         <h1>Welcome to My Tech Empowerment Hub!</h1>
         <h2>About me:</h2>
@@ -135,28 +136,27 @@
         <h2>Contact Me</h2>
         <p>Have questions or want to collaborate? Fill out this form and I'll get back to you!</p>
     
-        <form action="https://formspree.io/f/mvgzjyrz" method="POST">
-            <ul>
-                <li>Name: <input type="text" name="fullname" required></li>
-                <li>Email: <input type="email" name="email" required></li>
-                <li>Subject: <input type="text" name="subject" required></li>
-                <li>Message:<br>
-                    <textarea name="message" rows="4" cols="60" placeholder="Type your message here..." required></textarea>
-                </li>
-            </ul>
+       <form action="https://formspree.io/f/mvgzjyrz" method="POST">
+    <input type="hidden" name="_next" value="thank-you.html">
     
-            <p>
-                <input type="submit" value="Send Message">
-                <input type="reset" value="Clear">
-            </p>
+    <ul>
+        <li>Name: <input type="text" name="fullname" required></li>
+        <li>Email: <input type="email" name="email" required></li>
+        <li>Subject: <input type="text" name="subject" required></li>
+        <li>Message:<br>
+            <textarea name="message" rows="4" cols="60" placeholder="Type your message here..." required></textarea>
+        </li>
+    </ul>
+
+    <p>
+        <input type="submit" value="Send Message">
+        <input type="reset" value="Clear">
+    </p>
         </form>
     </section>
     
 
 </body>
-
 </html>
 
 
-<p>Leave me some info:</p>
-        <p></p>
