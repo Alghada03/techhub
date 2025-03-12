@@ -1,78 +1,88 @@
 body {
     background-color: #F3F1F5;
-    margin: 0 0%;
-    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
 }
-
 
 h1 {
     text-align: center;
-    font-family: serif;
-    font-weight: normal;
-    text-transform: uppercase;
-    border-bottom: 2px solid #a06cd5; 
-    margin-top: 0px;
-    color: #3d003d; 
+    font-weight: bold;
+    color: #d63384; /* Vibrant pink */
+    border-bottom: 3px solid #39FF14; /* Bright green accent */
+    padding-bottom: 10px;
 }
 
-h2, h3 {
-    color: #6a0572; 
-    font-size: 1.5em;
-    margin-left: 0px; 
+h2 {
+    color: #d63384;
+    font-size: 1.8em;
+    text-align: center;
 }
 
 p {
-    font-size: large;
-    font-family: sans-serif;
-    margin-left: 10px; 
+    font-size: 1.2em;
+    color: #444;
 }
 
 nav {
-    background-color: rgb(230, 191, 231); 
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #ffb3c1;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 20px;
+    color: white;
     text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
 }
 
 nav a:hover {
-    background-color: #d8a4d3; 
-    color: white;
+    background-color: #d63384;
+    border-radius: 5px;
 }
 
-section {
-    padding: 60px 20px;
-    margin-top: 0px;
-}
-
-article {
-    background-color: #fff;
+.info-box {
+    background-color: white;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-left: 6px solid #39FF14; /* Bright green accent */
 }
 
-picture {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+button {
+    background-color: #39FF14;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
 }
 
-img {
-    float: right; 
-    margin: 0 12px; 
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px; 
+button:hover {
+    background-color: #2dcc10;
 }
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #d63384;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #d63384;
+    color: white;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #a02066;
+}
+
