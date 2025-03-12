@@ -3,157 +3,69 @@
 
 <head>
     <meta charset="utf-8">
- <title>My Tech Empowerment Hub!</title>
- <link rel="stylesheet" href="styles.css"> 
-
+    <title>My Tech Empowerment Hub!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleSection(id) {
+            var section = document.getElementById(id);
+            if (section.style.display === "none") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
 </head>
 
 <body>
     <nav>
         <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#work">Work Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#blog">Blog</a>
         <a href="#contact">Contact Me</a>
     </nav>
 
     <section id="about">
-        <picture>
-            <source media="(min-width: 1200px)" srcset="logo-800.png">
-            <source media="(min-width: 800px)" srcset="logo-800.png">
-            <img src="C:\Users\ghada\CSC3750\1-web tech\logo.png" alt="My Tech Empowerment Hub Logo">
-        </picture>
-        
         <h1>Welcome to My Tech Empowerment Hub!</h1>
-        <h2>About me:</h2>
-        <p>My name is Alghada Badnai, and I’m a tech-savvy student with a knack for problem-solving and a strong interest in data analysis and computing. Currently, I’m honing my programming skills and exploring ways to use technology creatively to solve real-world problems.</p>
-        <h4>Education:</h4>
-        <p>Bachelors in Sociology and Computer Science at Wayne State University.</p>
-        <h4>Leadership:</h4>
-        <p>Proud to serve as Vice President of Wayne Women in Tech (WWiT) and Event Co-ordinator of the WSU WICYs' chapter, where I help foster a supportive environment for women in technology.</p>
-        <h4>Interests:</h4>
-        <p>From analyzing data to building interactive tools, I’m always eager to expand my skills. Outside of tech, I enjoy gardening—a hobby that inspires my love for growth and detail. I created this website to not only showcase my work but also to serve as a resource for anyone interested in technology. My ultimate goal is to bridge the gap between creativity and technology while making an impact in the field of data computing.</p>
-        <h4>Technical Skills:</h4>
-        <table>
-            <tr>
-                <th>Skill</th>
-                <th>Proficiency Level</th>
-            </tr>
-            <tr>
-                <td>Python</td>
-                <td>Advanced</td>
-            </tr>
-            <tr>
-                <td>C++</td>
-                <td>Intermediate</td>
-            </tr>
-            <tr>
-                <td>Data Analysis (Pandas, NumPy)</td>
-                <td>Advanced</td>
-            </tr>
-            <tr>
-                <td>HTML & CSS</td>
-                <td>Intermediate</td>
-            </tr>
-            <tr>
-                <td>SQL</td>
-                <td>Beginner</td>
-            </tr>
-        </table>
+        <p>Hi, I'm Alghada Badani, a tech-savvy student passionate about data analysis and computing.</p>
     </section>
 
-    <section id="projects">
-        <h2>Portfolio</h2>
-        <p>Technical projects and work (e.g., programming projects, data analysis, and anything else relevant)</p>
-        <p>List of skills/tools proficient in.</p>
+    <section id="education" class="info-box">
+        <h2>Education</h2>
+        <button onclick="toggleSection('edu-details')">Show/Hide Details</button>
+        <div id="edu-details" style="display:none;">
+            <p><strong>Wayne State University</strong> - Bachelors in Sociology and Computer Science.</p>
+            <p><strong>Leadership:</strong> Vice President of Wayne Women in Tech.</p>
+        </div>
     </section>
 
-    <section id="blog">
-        <h2>Blog</h2>
-        <p>A section where I can write about my experiences, share knowledge, and reflect on topics I care about </p>
-        <article>
-            <h4>Staying Up to Date in Tech</h4>
-            <p>Want to keep up with the tech world? Check out <a href="https://techcrunch.com/" target="_blank">TechCrunch</a>! It's like the ultimate hangout spot for all things startups, gadgets, and tech news. From hot new trends to cool updates on the tech scene!</p>
-        </article>
-        
-        <h4>Empowerment Through Tech</h4>
-        
-        <video width="500" height="262" controls>
-            <source src="video.mp4" type="video/mp4">
-            <source src="video.webm" type="video/webm">
-            <source src="video.ogv" type="video/ogg">
-            Sorry, your browser doesn't support HTML5 video.
-        </video>
-        
+    <section id="work" class="info-box">
+        <h2>Work Experience</h2>
+        <button onclick="toggleSection('work-details')">Show/Hide Details</button>
+        <div id="work-details" style="display:none;">
+            <p>Experience in managing CRM tools and data analysis.</p>
+        </div>
     </section>
 
-    <section id="contact-form">
+    <section id="projects" class="info-box">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Tech Empowerment Hub</strong> - A website to showcase technical skills.</li>
+            <li><strong>DeFi Risk Analysis</strong> - Research on vulnerabilities like reentrancy attacks.</li>
+            <li><strong>Flower Inventory System</strong> - Managing inventory using a C++ application.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="info-box">
         <h2>Contact Me</h2>
-        <p>Have questions or want to collaborate? Fill out this form and I'll get back to you!</p>
-        <form action="https://script.google.com/macros/s/AKfycbz8uAIwO-QHocdGBTAQu9lXI8xCZy6wfwisd4J0Nhpg5S8ISuMxsQImu-fIQWukLR6p/exec" method="POST">
-
-            <fieldset>
-                <legend>Your Contact Information</legend>
-                <ul>
-                    <li>
-                        <label for="fullname">Name:</label>
-                        <input type="text" id="fullname" name="fullname" required>
-                    </li>
-                    <li>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </li>
-                    <li>
-                        <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </li>
-                    <li>
-                        <label for="message">Message:</label><br>
-                        <textarea id="message" name="message" rows="4" cols="60" placeholder="Type your message here..." required></textarea>
-                    </li>
-                </ul>
-            </fieldset>
-        
-            <fieldset>
-                <legend>Programming Preferences</legend>
-                <p>Select your primary programming language and areas of interest:</p>
-        
-                <fieldset>
-                    <legend>Primary Language</legend>
-                    <ul>
-                        <li><label><input type="radio" name="language" value="Python" required> Python</label></li>
-                        <li><label><input type="radio" name="language" value="C++"> C++</label></li>
-                        <li><label><input type="radio" name="language" value="Java"> Java</label></li>
-                        <li><label><input type="radio" name="language" value="JavaScript"> JavaScript</label></li>
-                    </ul>
-                </fieldset>
-        
-                <fieldset>
-                    <legend>Areas of Interest</legend>
-                    <ul>
-                        <li><label><input type="checkbox" name="interest[]" value="Data Analysis" checked> Data Analysis</label></li>
-                        <li><label><input type="checkbox" name="interest[]" value="Web Development"> Web Development</label></li>
-                        <li><label><input type="checkbox" name="interest[]" value="Cybersecurity"> Cybersecurity</label></li>
-                        <li><label><input type="checkbox" name="interest[]" value="Software Engineering"> Software Engineering</label></li>
-                        <li><label><input type="checkbox" name="interest[]" value="AI & Machine Learning"> AI & Machine Learning</label></li>
-                    </ul>
-                </fieldset>
-        
-                <p>
-                    <label for="experience"><strong>Programming Level:</strong></label>
-                    <select id="experience" name="experience" size="1">
-                        <option value="Beginner">Beginner</option>
-                        <option value="Intermediate">Intermediate</option>
-                        <option value="Advanced">Advanced</option>
-                        <option value="Expert">Expert</option>
-                    </select>
-                </p>
-            </fieldset>
-            <p>
-                <input type="submit" value="Send Message">
-                <input type="reset" value="Clear">
-            </p>    
-        </form>                     
+        <p>Have questions? Fill out the form and I'll get back to you!</p>
+        <form action="Thankyou.html" method="POST">
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="email" placeholder="Your Email" required><br>
+            <textarea placeholder="Your Message" required></textarea><br>
+            <input type="submit" value="Send Message">
+        </form>
     </section>
 </body>
 </html>
-
