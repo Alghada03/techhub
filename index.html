@@ -6,66 +6,36 @@
     <title>My Tech Empowerment Hub!</title>
     <link rel="stylesheet" href="styles.css">
     <script>
-        function toggleSection(id) {
-            var section = document.getElementById(id);
-            if (section.style.display === "none") {
-                section.style.display = "block";
-            } else {
-                section.style.display = "none";
-            }
+        function loadSection(section, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => document.getElementById(section).innerHTML = data);
         }
+        
+        window.onload = function () {
+            loadSection("about-section", "about.html");
+            loadSection("experience-section", "experience.html");
+            loadSection("projects-section", "projects.html");
+            loadSection("blog-section", "blog.html");
+            loadSection("contact-section", "contact.html");
+        };
     </script>
 </head>
 
 <body>
     <nav>
-        <a href="#about">About Me</a>
-        <a href="#education">Education</a>
-        <a href="#work">Work Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact Me</a>
+        <a href="#about-section">About Me</a>
+        <a href="#experience-section">Experience</a>
+        <a href="#projects-section">Projects</a>
+        <a href="#blog-section">Blog</a>
+        <a href="#contact-section">Contact Me</a>
     </nav>
 
-    <section id="about">
-        <h1>Welcome to My Tech Empowerment Hub!</h1>
-        <p>Hi, I'm Alghada Badani, a tech-savvy student passionate about data analysis and computing.</p>
-    </section>
-
-    <section id="education" class="info-box">
-        <h2>Education</h2>
-        <button onclick="toggleSection('edu-details')">Show/Hide Details</button>
-        <div id="edu-details" style="display:none;">
-            <p><strong>Wayne State University</strong> - Bachelors in Sociology and Computer Science.</p>
-            <p><strong>Leadership:</strong> Vice President of Wayne Women in Tech.</p>
-        </div>
-    </section>
-
-    <section id="work" class="info-box">
-        <h2>Work Experience</h2>
-        <button onclick="toggleSection('work-details')">Show/Hide Details</button>
-        <div id="work-details" style="display:none;">
-            <p>Experience in managing CRM tools and data analysis.</p>
-        </div>
-    </section>
-
-    <section id="projects" class="info-box">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Tech Empowerment Hub</strong> - A website to showcase technical skills.</li>
-            <li><strong>DeFi Risk Analysis</strong> - Research on vulnerabilities like reentrancy attacks.</li>
-            <li><strong>Flower Inventory System</strong> - Managing inventory using a C++ application.</li>
-        </ul>
-    </section>
-
-    <section id="contact" class="info-box">
-        <h2>Contact Me</h2>
-        <p>Have questions? Fill out the form and I'll get back to you!</p>
-        <form action="Thankyou.html" method="POST">
-            <input type="text" placeholder="Your Name" required><br>
-            <input type="email" placeholder="Your Email" required><br>
-            <textarea placeholder="Your Message" required></textarea><br>
-            <input type="submit" value="Send Message">
-        </form>
-    </section>
+    <div id="about-section"></div>
+    <div id="experience-section"></div>
+    <div id="projects-section"></div>
+    <div id="blog-section"></div>
+    <div id="contact-section"></div>
 </body>
+
 </html>
