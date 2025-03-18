@@ -22,7 +22,7 @@ header {
     repeat-x;
     background-position: bottom;
     background-size:  30px; 
-    width: 100vw; 
+    width: 100%; 
     color: #153b1d;
 }
 
