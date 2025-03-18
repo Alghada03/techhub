@@ -3,6 +3,12 @@ body {
     margin: 0 0%;
     font-family: 'Times New Roman', Times, serif;
     font-size: 100%;
+    body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Optional: centers content */
+}
+
 }
 
 header {
