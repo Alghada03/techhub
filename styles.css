@@ -2,103 +2,107 @@ body {
     background-color: #F3F1F5;
     margin: 0 0%;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+    display: flex;
+    background-position: center top;
+
+
+}
+
+header {
+    margin-top: 80px;
+    padding: 3em 1em 2em 1em;
+    text-align: center;
+    background-color: rgba(255,255,255,.5);
+    background: url(flower.webp) center top
+repeat-x;
+ background:
+ url(flower.webp) left top repeat-y,
+ url(flower.webp) right top repeat-y,
+ url(flowerr.png) 80% bottom no-repeat;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size:  30px; 
+    width: 100vw; 
+    color: #153b1d;
 }
 
 
-h1 {
+   h1 {
     text-align: center;
     font-family: serif;
     font-weight: normal;
-    
-    border-bottom: 2px solid #a06cd5; 
-    margin-top: 0px;
-    color: #3d003d; 
+    font-size: 1.5em;
+    color: #153b1d;
 }
 
 h2, h3 {
-    color: #6a0572; 
+    color: #153b1d;
     font-size: 1.5em;
-    margin-left: 0px; 
+    text-align: center;
 }
 
 p {
     font-size: large;
     font-family: sans-serif;
-    margin-left: 10px; 
+    text-align: center;
 }
 
 nav {
-    background-color: rgb(230, 191, 231); 
+    background-color: rgb(230, 191, 231);
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    
 }
 
 nav a {
-    float: left;
-    display: block;
+    display: inline-block;
     color: black;
-    text-align: center;
     padding: 14px 20px;
     text-decoration: none;
 }
 
-nav a:hover {
-    background-color: #d8a4d3; 
-    color: white;
-}
-
 section {
     padding: 60px 20px;
-    margin-top: 0px;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
 }
 
-article {
+article, .textbox {
     background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-.textbox {
-    background-color: #fff;
-    padding: 12px; /* Slightly reduced padding */
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* More subtle shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    font-family: 'Times New Roman', Times, serif;
-    display: flex;
-    flex-direction: column;
-    gap: 4px; /* Reduce spacing inside the box */
-}
-
-.education-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Less gap between boxes */
+    margin: auto;
+    text-align: center;
 }
 
 .textbox h3 {
-    font-size: 18px; /* Make headings smaller */
-    margin-bottom: 2px; /* Reduce gap below heading */
+    font-size: 18px;
+    margin-bottom: 2px;
+    text-align: center;
 }
 
 .textbox p {
-    font-size: 14px; /* Make text smaller */
-    margin: 1px 0; /* Reduce spacing between paragraphs */
+    font-size: 14px;
+    margin: 1px 0;
+    text-align: center;
 }
 
 .textbox .extra-info {
-    font-size: 12px; /* Extra info text size */
-    color: #555; /* Slightly dim the text */
-    margin-top: 2px; /* Keep small space for extra info */
-
+    font-size: 12px;
+    color: #555;
+    margin-top: 2px;
+    text-align: center;
 }
-
 
 picture {
     display: flex;
@@ -107,9 +111,25 @@ picture {
 }
 
 img {
-    float: right; 
-    margin: 0 12px; 
+    display: block;
+    margin: auto;
     max-width: 100%;
     height: auto;
-    border-radius: 8px; 
+    border-radius: 8px;
+}
+
+form {
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color:  rgb(230, 191, 231); /* Light background */
+    color: #153b1d; /* Your existing text color */
+    border-top: 2px solid #153b1d; /* Top border like header */
+    width: 100%;
 }
