@@ -1,47 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+
+<header>
     <meta charset="utf-8">
-    <title>Tech Empowerment Hub</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+ <title>Tech Empowerment Hub</title>
+ <h1>Welcome to My Tech Empowerment Hub!</h1>
+ <link rel="stylesheet" href="styles.css"> 
+ <style>
+    body {font-family: Verdana, sans-serif;}
+    h1 {font-family: "Marko One", Georgia, serif;}
+   </style>
+
+</header>
+
 <body>
-    <header>
-        <h1>Welcome to My Tech Empowerment Hub!</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="experience.html">Experience</a>
-            <a href="projects.html">Projects</a>
-            <a href="blog.html">Blog</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="#about-section">About Me</a>
+        <a href="experience.html">Experience</a>
+        <a href= "projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="#contact-section">Contact Me</a>
+    </nav>
+
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>My name is Alghada Badani, and I’m a tech-savvy student with a knack for problem-solving and a strong interest in data analysis and computing.</p>
+        <h2>About me:</h2>
+        <p>My name is Alghada Badani, and I’m a tech-savvy student with a knack for problem-solving and a strong interest in data analysis and computing. Currently, I’m honing my programming skills and exploring ways to use technology creatively to solve real-world problems.</p>
     </section>
 
-    <section id="contact">
+
+
+
+
+
+
+    <section id="contact-form">
         <h2>Contact Me</h2>
         <p>Have questions or want to collaborate? Fill out this form and I'll get back to you!</p>
         <form action="https://script.google.com/macros/s/AKfycbz8uAIwO-QHocdGBTAQu9lXI8xCZy6wfwisd4J0Nhpg5S8ISuMxsQImu-fIQWukLR6p/exec" method="POST">
+
             <fieldset>
                 <legend>Your Contact Information</legend>
-                <label for="fullname">Name:</label>
-                <input type="text" id="fullname" name="fullname" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                <ul>
+                    <li>
+                        <label for="fullname">Name:</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </li>
+                    <li>
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </li>
+                    <li>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="60" placeholder="Type your message here..." required></textarea>
+                    </li>
+                </ul>
             </fieldset>
-            <input type="submit" value="Send Message">
-        </form>
+            <p>
+                <input type="submit" value="Send Message">
+                <input type="reset" value="Clear">
+            </p>    
+        </form>                     
     </section>
+
+
 
     <footer>
         <p>© 2025 My Tech Empowerment Hub | Designed by Alghada Badani</p>
     </footer>
+
+    
 </body>
 </html>
+
