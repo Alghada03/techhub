@@ -1,47 +1,38 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>My Tech Empowerment Hub!</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        function loadSection(section, file) {
-            fetch(file)
-                .then(response => response.text())
-                .then(data => document.getElementById(section).innerHTML = data)
-                .catch(error => console.error("Error loading " + file, error));
-        }
-        
-        window.onload = function () {
-            loadSection("about-section", "about.html");
-            loadSection("experience-section", "experience.html"); // Now combined
-            loadSection("projects-section", "projects.html");
-            loadSection("blog-section", "blog.html");
-            loadSection("contact-section", "contact.html");
-        };
-    </script>
 </head>
-
 <body>
+
+    <!-- Navigation Menu -->
     <nav>
-        <a href="#about-section">About Me</a>
-        <a href="#experience-section">Experience & Skills</a>
-        <a href="#projects-section">Projects</a>
-        <a href="#blog-section">Blog</a>
-        <a href="#contact-section">Contact Me</a>
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
     </nav>
 
-     <section id="about">
-        <h2>About me:</h2>
-        <p>My name is Alghada Badani, and I’m a tech-savvy student with a knack for problem-solving and a strong interest in data analysis and computing. Currently, I’m honing my programming skills and exploring ways to use technology creatively to solve real-world problems.</p>
+    <!-- Hero Section -->
+    <header>
+        <h1>Welcome to My Tech Empowerment Hub!</h1>
+    </header>
+
+    <!-- About Me Section (Stays in index.html) -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>My name is Alghada Badani, and I’m a tech-savvy student with a knack for problem-solving and a strong interest in data analysis and computing. 
+        Currently, I’m honing my programming skills and exploring ways to use technology creatively to solve real-world problems.</p>
     </section>
 
-    <section id="contact-form">
+    <!-- Contact Me Section (Stays in index.html) -->
+    <section id="contact">
         <h2>Contact Me</h2>
         <p>Have questions or want to collaborate? Fill out this form and I'll get back to you!</p>
-        <form action="https://script.google.com/macros/s/AKfycbz8uAIwO-QHocdGBTAQu9lXI8xCZy6wfwisd4J0Nhpg5S8ISuMxsQImu-fIQWukLR6p/exec" method="POST">
 
+        <form action="https://script.google.com/macros/s/AKfycbz8uAIwO-QHocdGBTAQu9lXI8xCZy6wfwisd4J0Nhpg5S8ISuMxsQImu-fIQWukLR6p/exec" method="POST">
             <fieldset>
                 <legend>Your Contact Information</legend>
                 <ul>
@@ -63,24 +54,28 @@
                     </li>
                 </ul>
             </fieldset>
+
             <p>
                 <input type="submit" value="Send Message">
                 <input type="reset" value="Clear">
             </p>    
-        </form>                     
+        </form>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://github.com/Alghada03" target="_blank">
+                <img src="assets/icons/github.png" alt="GitHub" class="icon">
+            </a>
+            <a href="https://www.linkedin.com/in/alghada-badani" target="_blank">
+                <img src="assets/icons/linkedin.png" alt="LinkedIn" class="icon">
+            </a>
+        </div>
     </section>
 
-
-
+    <!-- Footer -->
     <footer>
         <p>© 2025 My Tech Empowerment Hub | Designed by Alghada Badani</p>
     </footer>
 
-    <div id="about-section"></div>
-    <div id="experience-section"></div>
-    <div id="projects-section"></div>
-    <div id="blog-section"></div>
-    <div id="contact-section"></div>
 </body>
-
 </html>
