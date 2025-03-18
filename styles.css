@@ -3,13 +3,15 @@ body {
     margin: 0 0%;
     font-family: 'Times New Roman', Times, serif;
     font-size: 100%;
-    
     display: flex;
+    background-position: center top;
+
     flex-direction: column;
-    align-items: center; /* Optional: centers content */
+    align-items: center;
+    background-image: url("flowerr.png");
+    background-size: 250px 200px
+
 }
-
-
 
 header {
     margin-top: 80px;
@@ -17,6 +19,10 @@ header {
     text-align: center;
     background-color: rgba(255,255,255,.5);
     background: url(flower.webp) center top
+    repeat-x;
+    background-position: bottom;
+    background-size:  30px; 
+    width: 100vw; 
     color: #153b1d;
 }
 
